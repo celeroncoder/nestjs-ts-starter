@@ -1,5 +1,5 @@
 # NestJS TS Starter
-NestJS Typescript starter with:
+NestJS Default Typescript starter, [typescript-starter](https://github.com/nestjs/typescript-starter) with:
 - HttpLogger Middleware 
 - Hot Reload Development Server
 - Github Actions
@@ -35,6 +35,3 @@ yarn
 # start the devlopment server
 yarn start:dev
 ```
-
-### Note
-> Make Sure to change the name on the [LICENSE](https://github.com/khushalbhardwaj-0111/nestjs-ts-starter/blob/master/LICENSE)
