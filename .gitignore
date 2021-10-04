@@ -397,3 +397,8 @@ Temporary Items
 .env
 dist
 coverage
+
+# Lock Files
+yarn.lock
+yarn-error.log
+package-lock.json
