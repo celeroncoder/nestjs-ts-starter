@@ -1,8 +1,21 @@
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { NestFactory } from "@nestjs/core";
+import { AppModule } from "./app.module";
+import * as dotenv from "dotenv";
+import * as helmet from "helmet";
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  await app.listen(3000);
-}
-bootstrap();
+dotenv.config();
+
+declare const module: any;
+
+(async function bootstrap(): Promise<void> {
+    const app = await NestFactory.create(AppModule);
+    app.enableCors();
+    app.use(helmet());
+
+    if (module.hot) {
+        module.hot.accept();
+        module.hot.dispose(() => app.close());
+    }
+
+    await app.listen(process.env.PORT || 8080);
+})();
