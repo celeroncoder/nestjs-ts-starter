@@ -23,5 +23,4 @@ yarn start:dev
 ```
 
 ### Note
-> Make Sure to change the name on the [LICENSE]()
----
+> Make Sure to change the name on the [LICENSE](https://github.com/khushalbhardwaj-0111/nestjs-ts-starter/blob/master/LICENSE)
