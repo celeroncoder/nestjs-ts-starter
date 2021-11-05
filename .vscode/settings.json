@@ -1,0 +1,7 @@
+{
+  "[dockerfile]": {
+    "editor.quickSuggestions": {
+      "strings" : true
+    }
+  }
+}
